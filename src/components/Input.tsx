@@ -14,6 +14,7 @@ export const Input = (props: any) => {
         }}
       >
         <input
+          style={{ width: "50%"}}
           type="text"
           value={value}
           onChange={e => setValue(e.target.value)}

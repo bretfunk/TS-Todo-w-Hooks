@@ -13,7 +13,7 @@ export const List = (props: any) => {
   return (
     <ul>
       {props.list.map((item: string, i: number) => (
-        <li key={i} className="p-1">
+        <li key={i} className="p-1 h5">
           {item}
           <button
             className="btn btn-sm btn-danger ml-4"

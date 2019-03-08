@@ -8,8 +8,8 @@ const App = (props: any) => {
     "Profit!!"
   ]);
   return (
-    <div className="container bg-light">
-      <div className="text-center">
+    <div className="container bg-light m-4 p-4">
+      <div className="jumbotron text-center bg-dark text-light">
         <h1>TS Todo with Hooks</h1>
       </div>
       <div className="text-center">
