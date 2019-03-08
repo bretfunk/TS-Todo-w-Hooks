@@ -1,28 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Input } from "./components/Input";
+import { List } from "./components/List";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+const App = (props: any) => {
+  const [list, setList] = useState([
+    "Build TS todo app with hooks",
+    "Profit!!"
+  ]);
+  return (
+    <div className="container bg-light">
+      <div className="text-center">
+        <h1>TS Todo with Hooks</h1>
       </div>
-    );
-  }
-}
+      <div className="text-center">
+        <Input setList={setList} list={list} />
+      </div>
+      <div className="justify-content-center">
+        <List setList={setList} list={list} />
+      </div>
+    </div>
+  );
+};
 
 export default App;
